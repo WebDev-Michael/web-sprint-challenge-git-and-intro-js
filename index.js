@@ -318,11 +318,11 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(array, string){
-  let newArray = array.filter(names => names.name === string).map(({bio}) => bio);
-  return newArray;
+  let newArray = array.filter(artist => artist.name == string).map(({bio}) => bio);
+  return newArray[0];
 }
 
-console.log('Task 8:', artistInfo(artists, 'Frida Kahlo'));
+console.log('Task 8:', artistInfo(artists, 'Kazimir Malevich'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
